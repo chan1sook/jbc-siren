@@ -1,5 +1,7 @@
 # Make the Siren App
-
+ifeq ($(strip ${EXPOSE_PORT}),)
+EXPOSE_PORT = 8080
+endif
 
 # Default rule
 # Builds the electron app and executes it
@@ -12,7 +14,7 @@ dev:
 
 # Runs a docker production webserver
 docker:
-	docker build -t siren . && docker run --rm -it --name siren -p 80:80 siren
+	docker build -t siren . && docker run --rm -it --name siren -p ${EXPOSE_PORT}:80 siren
 
 # Compile into a number of releases
 release:
