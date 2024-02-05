@@ -29,7 +29,7 @@ const ValidatorMetric = () => {
 
   return (
     <SyncMetric
-      id='ethMain'
+      id='jibChain'
       borderStyle='border-r'
       title={t('executionEngine')}
       subTitle={`${isReady ? t('synced') : t('syncing')} —`}

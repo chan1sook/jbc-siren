@@ -10,9 +10,9 @@ const Template: Story<SyncMetricProps> = (props) => <SyncMetric {...props} />
 
 export const Base = Template.bind({})
 Base.args = {
-  title: 'ETHEREUM MAINNET',
+  title: 'JIBCHAIN',
   color: 'secondary',
-  id: 'ethMain',
+  id: 'jibChain',
   total: 212245,
   amount: 150435,
 }

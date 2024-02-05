@@ -1,4 +1,4 @@
-# Siren
+# Siren (JIBCHAIN)
 
 This is an open-source User Interface for the Lighthouse Ethereum Beacon Node
 and Validator Client.

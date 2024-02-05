@@ -64,7 +64,7 @@ export interface ConfigConnectionFormProps {
 const ConfigConnectionForm: FC<ConfigConnectionFormProps> = ({ children }) => {
   const { t } = useTranslation()
   const [isLoading] = useState<boolean>(false)
-  const [formType, setType] = useState<ConfigType>(ConfigType.BASIC)
+  const [formType, setType] = useState<ConfigType>(ConfigType.ADVANCED)
   const setDevices = useSetRecoilState(deviceSettings)
   const setView = useSetRecoilState(onBoardView)
   const setDashView = useSetRecoilState(dashView)
@@ -84,18 +84,19 @@ const ConfigConnectionForm: FC<ConfigConnectionFormProps> = ({ children }) => {
   const storedBnNode = parseEndpointString(storedDevice?.beaconUrl)
   const storedVc = parseEndpointString(storedDevice?.validatorUrl)
 
-  const [storedName, storeUserName] = useLocalStorage<string>('username', '')
+  const [storedName, storeUserName] = useLocalStorage<string>('username', 'Anonymous')
 
   const hasCache = Boolean(storedDevice) && Boolean(storedName)
 
   const endPointDefault = {
     protocol: Protocol.HTTP,
-    address: '127.0.0.1',
-    port: 5052,
+    address: 'jbc-bn.xpool.pw',
+    port: 5002,
   }
 
   const vcDefaultEndpoint = {
-    ...endPointDefault,
+    protocol: Protocol.HTTP,
+    address: '127.0.0.1',
     port: 5062,
   }
 

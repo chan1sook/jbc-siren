@@ -71,12 +71,12 @@ const AccountEarning = () => {
           </Typography>
           <div className='w-full flex justify-end pr-6 pt-4'>
             <Typography color='text-white' isBold darkMode='dark:text-white' type='text-h2'>
-              {formatLocalCurrency(totalEarnings, { max: 3 })} ETH
+              {formatLocalCurrency(totalEarnings, { max: 3 })} JBC
             </Typography>
           </div>
           <div className='w-full mt-6 flex items-center'>
             <LightHouseLogo className='hidden md:block text-white w-16 h-16' />
-            <div className='flex-1 ml-2 md:ml-6 md:ml-12 flex items-center space-x-2 justify-between'>
+            <div className='flex-1 ml-2 md:ml-12 flex items-center space-x-2 justify-between'>
               <CurrencySelect />
               <div className='flex items-center flex-wrap justify-end md:justify-start md:text-left text-right space-y-4 md:space-y-0 md:space-x-4'>
                 <div>
@@ -89,7 +89,7 @@ const AccountEarning = () => {
                     type='text-caption1'
                     className='xl:text-body'
                   >
-                    {`${formattedPrefix}${formatLocalCurrency(formattedRate)} ${currency}/ETH`}
+                    {`${formattedPrefix}${formatLocalCurrency(formattedRate)} ${currency}/JBC`}
                   </Typography>
                 </div>
                 <div>
@@ -142,7 +142,7 @@ const AccountEarning = () => {
               >
                 <div className='flex space-x-2'>
                   <Typography type='text-caption1' className='uppercase' color='text-dark400'>
-                    ETH
+                    JBC
                   </Typography>
                   <i
                     id='tooltip'
@@ -156,7 +156,7 @@ const AccountEarning = () => {
                   darkMode='dark:text-white'
                   family='font-roboto'
                 >
-                  {formatLocalCurrency(estimate, { max: 4 })} ETH
+                  {formatLocalCurrency(estimate, { max: 4 })} JBC
                 </Typography>
               </Tooltip>
             </div>

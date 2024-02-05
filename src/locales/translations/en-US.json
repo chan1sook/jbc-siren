@@ -325,7 +325,7 @@
       "index": "Index",
       "balance": "Balance",
       "slotsBehind": "Slots Behind",
-      "exploreBeaconChai": "Explore more on beaconchai.in dashbaoard",
+      "exploreBeaconChai": "Explore more on dora.jibchain.net dashboard",
       "explore": "Explore",
       "status": "Status",
       "deposit": "Deposit",
@@ -344,8 +344,8 @@
     "peerCountMedium": "{{type}}: Peer count reaching low levels"
   },
   "tooltip": {
-    "ethEstimate": "Estimated {{time}} ETH earnings of all validators under current network and device conditions.",
-    "ethTotal": "Total ETH earnings of all validators",
+    "ethEstimate": "Estimated {{time}} JBC earnings of all validators under current network and device conditions.",
+    "ethTotal": "Total JBC earnings of all validators",
     "fiatEstimate": "Estimated {{time}} earnings converted to selected fiat currency exchange rate.",
     "fiatTotal": "Total earnings converted to selected fiat currency exchange rate.",
     "annualApr": "Combined total Annual Percentage Rate estimate."
@@ -387,12 +387,12 @@
     }
   },
   "basicValidatorMetrics": {
-    "ethRate": "ETH Rate",
+    "ethRate": "JBC Rate",
     "validator": "Validator",
     "balance": "Balance"
   },
   "validatorInfoHeader": {
-    "viewOnBeaconChain": "View on BeaconChai.in",
+    "viewOnBeaconChain": "View on dora.jibchain.net",
     "validatorBalance": "Validator <0></0> Balance"
   },
   "validatorExit": {

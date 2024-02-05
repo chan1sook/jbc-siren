@@ -16,7 +16,8 @@ const BeaconChaLink: FC<BeaconChaLinkProps> = ({ index }) => {
     <a target='_blank' className='flex-1' rel='noreferrer' href={`${baseUrl}/${index}`}>
       <div className='cursor-pointer w-full h-full dark:bg-dark700 bg-dark25 flex-1 space-y-3 p-3'>
         <Typography type='text-caption1' isBold className='uppercase'>
-          Beacon <br /> Cha.in
+          JIBCHAIN <br />
+          Dora
         </Typography>
         <Typography color='text-dark400' fontWeight='font-light' type='text-caption2'>
           {t('validatorManagement.details.exploreBeaconChai')}
