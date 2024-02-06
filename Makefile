@@ -14,7 +14,7 @@ dev:
 
 # Runs a docker production webserver
 docker:
-	docker build -t siren . && docker run --rm -it --name siren -p ${EXPOSE_PORT}:80 siren
+	docker build -t jbc-siren . && docker run -d --name jbc-siren -p ${EXPOSE_PORT}:80 jbc-siren
 
 # Compile into a number of releases
 release:
@@ -23,3 +23,5 @@ release:
 # Remove compiled artifacts
 clean:
 	rm -r out
+
+	sudo docker run --rm -it --name jbc-siren -p 8080:80 jbc-siren
